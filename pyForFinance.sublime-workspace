@@ -1,0 +1,444 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"googl",
+				"googlDf"
+			],
+			[
+				"plot",
+				"plot_columns"
+			],
+			[
+				"Grand",
+				"Grandma"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "__init__.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data-reader.py",
+			"settings":
+			{
+				"buffer_size": 2064,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 5,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/yhoo.csv",
+			"settings":
+			{
+				"buffer_size": 48044,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Virtualenv/Python + Virtualenv.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Virtualenv/Python + Virtualenv.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"last_filter": "Insta",
+		"selected_items":
+		[
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Acti",
+				"Virtualenv: Activate"
+			],
+			[
+				"",
+				"Build With: Python + Virtualenv"
+			],
+			[
+				"Vi",
+				"Virtualenv: New"
+			],
+			[
+				":Activate",
+				"Virtualenv: Activate"
+			],
+			[
+				"Activate",
+				"Virtualenv: Activate"
+			],
+			[
+				"Virtu",
+				"Virtualenv: Activate"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/github/VEnvs/pyForFinanceEnv",
+		"/C/github/VEnvs/pyForFinanceEnv/Source",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data"
+	],
+	"file_history":
+	[
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data-reader.py",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data/googl.csv",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data/msft.csv",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data/aapl.csv",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data/ibm.csv",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/pyForFinance.sublime-project",
+		"/C/Users/sergio.nunez/WorkingFolder/RAPid/RAPid/Sql/8.31.0/LogoutUrlAndLoginDisabled.sql",
+		"/C/Users/sergio.nunez/WorkingFolder/RAPid/PULL_REQUEST_TEMPLATE.md",
+		"/C/Users/sergio.nunez/WorkingFolder/RAPid/.github/ISSUE_TEMPLATE.md",
+		"/C/Users/sergio.nunez/Downloads/androidplot-master/androidplot-master/demoapp/src/main/res/values/dimens.xml",
+		"/C/Users/sergio.nunez/Downloads/androidplot-master/androidplot-master/demoapp/src/main/res/values/style.xml",
+		"/C/Users/sergio.nunez/Downloads/androidplot-master/androidplot-master/demoapp/src/main/res/layout/pie_chart.xml",
+		"/C/Users/sergio.nunez/AndroidStudioProjects/SimpleLoginApplication/app/src/main/res/values/styles.xml",
+		"/C/Users/sergio.nunez/AndroidStudioProjects/SimpleLoginApplication/app/src/main/res/values/dimens.xml",
+		"/C/Exercises/SystemDesign/integers",
+		"/C/Exercises/SystemDesign/billionIntegers",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/CsvFiles/SmallFiles/20161115_RosslynAnalytics_Transaction_File_2015_1_valid.csv",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/CsvFiles/F1/20161115_RosslynAnalytics_Transaction_File_2015_1_valid - Copy.csv",
+		"/C/Users/sergio.nunez/Downloads/Data_Extract_Template_SPEND_only.csv",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/CsvFiles/BigFiles/ApData.003.csv",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/CsvFiles/Data_Extract_Template_SPEND_only.csv",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/CsvFiles/20161115_RosslynAnalytics_Transaction_File_2015_1_valid.csv",
+		"/P/Clients/Active/Xerox/Xerox Spend Project/Data/23112016/VendorMasterFile.txt",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/collapsable/collapsable.js",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/collapsable/collapsable.css",
+		"//rosslyn.local/data/Home/Sergio.Nunez/Desktop/_.csv",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/collapsable/index.html",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/comments/index.html",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/comments/example8.js",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/super-simple/super-simple.js",
+		"/C/Users/sergio.nunez/Desktop/treant-js-master/treant-js-master/examples/tennis-draw/example7.js",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/BSEG.csv",
+		"/C/Users/sergio.nunez/Desktop/_.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/BSAKCopy.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/BSAK.csv",
+		"/C/Users/sergio.nunez/Documents/GitHub/Resso/RA.Extractor.Gui/bin/Debug/Templates/AccountsReceiveable.json",
+		"/C/Users/sergio.nunez/Documents/GitHub/Resso/RA.Extractor.Gui/bin/Debug/Templates/AccountsPayableUnpaid.json",
+		"/C/Users/sergio.nunez/Documents/GitHub/Resso/RA.Extractor.Gui/bin/Debug/Templates/AccountsPayablePaid.json",
+		"/C/Users/sergio.nunez/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/CSKT.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/T007S.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/EKKO.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/EKPO.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/LFA1.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/TCURX.csv",
+		"/C/Users/sergio.nunez/Documents/sap-vanilla-alpha/SKAT.csv",
+		"/C/Users/sergio.nunez/Documents/GitHub/Resso/Test/RA.Extractor.App.Test/bin/Debug/TestExtract/TestTable/TestTable.0.csv"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"935.00",
+			"type",
+			"CSKT",
+			"CS",
+			"CSKT",
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "data-reader.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2064,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2064,
+								2064
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/yhoo.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 651.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pyForFinance.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

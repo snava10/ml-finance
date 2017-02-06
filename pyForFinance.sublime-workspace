@@ -37,15 +37,6 @@
 			}
 		},
 		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 5,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "data/yhoo.csv",
 			"settings":
 			{
@@ -85,10 +76,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 196.0,
-		"last_filter": "Insta",
+		"height": 392.0,
+		"last_filter": "Vi",
 		"selected_items":
 		[
+			[
+				"Vi",
+				"Virtualenv: Activate"
+			],
 			[
 				"Insta",
 				"Package Control: Install Package"
@@ -100,10 +95,6 @@
 			[
 				"",
 				"Build With: Python + Virtualenv"
-			],
-			[
-				"Vi",
-				"Virtualenv: New"
 			],
 			[
 				":Activate",
@@ -122,7 +113,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -142,12 +133,10 @@
 	},
 	"expanded_folders":
 	[
-		"/C/github/VEnvs/pyForFinanceEnv",
-		"/C/github/VEnvs/pyForFinanceEnv/Source",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data"
 	],
 	"file_history":
 	[
+		"/home/sergio/github/VEnvs/mlFinanceEnv/source/ml-finance/.gitignore",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data-reader.py",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data/googl.csv",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data/msft.csv",
@@ -198,7 +187,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -280,8 +269,8 @@
 						"selection":
 						[
 							[
-								2064,
-								2064
+								180,
+								180
 							]
 						],
 						"settings":
@@ -298,34 +287,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "data/yhoo.csv",
 					"semi_transient": false,
 					"settings":
@@ -349,7 +310,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -388,17 +349,17 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 651.0
+		"height": 188.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/Virtualenv/Python + Virtualenv.sublime-build",
 	"project": "pyForFinance.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

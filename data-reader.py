@@ -62,6 +62,19 @@ def get_data(symbols, dates):
 		df = df.join(symbolDf,how='inner')
 	return df
 
+def plot_data(dataFrame, title='Stock prices'):
+	ax = dataFrame.plot(title=title)
+	ax.set_xlabel("Date")
+	ax.set_ylabel("Price")
+	plt.show()
+
+def plot_selected(df, columns, start_index, end_index):
+	#print(df.ix[start_index:end_index,['SPY', 'YHOO']])
+	plot_data(df.ix[start_index:end_index,['SPY', 'YHOO']],title="Selected data")
+
+def normalize_data(df):
+	return df/df.ix[0,:]
+
 if __name__ == "__main__":
 	# for symbol in ['MSFT', 'GOOGL']:
 	# 	print("Mean Volume")
@@ -70,6 +83,17 @@ if __name__ == "__main__":
 	#plot_columns('googl',['Adj Close'])
 	#plot_columns('googl',['Adj Close','Close'])
 	#aggregate(['googl','msft','yhoo'])
-	dates = pd.date_range('2014-01-22', '2016-01-26')
-	df = get_data(['googl','msft','yhoo'],dates)
+	#dates = pd.date_range('2014-01-22', '2016-01-26')
+	#df = get_data(['googl','msft','yhoo'],dates)
+	#print(df)
+
+	#plot_data(df)
+
+	dates = pd.date_range('2014-01-01', '2015-02-10')
+	symbols = ['googl', 'yhoo', 'gld']  # SPY will be added in get_data()
+	df = get_data(symbols, dates)
+	#print(df/df.ix[0,:])
+	#dates = pd.date_range('2014-01-01', '2014-01-31')
+	df = normalize_data(df)
 	print(df)
+	plot_selected(df, ['SPY', 'YHOO'], '2014-03-01', '2014-01-31')

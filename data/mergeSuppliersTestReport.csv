@@ -1,0 +1,6 @@
+Description,Invoice Lines,DimensionLines,TimeChecksum,TimeWithoutChecksum,Database Server
+"A refresh of 10000 invoice lines with 100 unique suppliers.The supplier dimension is pre-populated with 100 suppliers, and the refresh contains the exact same suppliers",10000,100,00:00:11,00:00:39,"RA-Dev-Sql01"
+"A refresh of 10000 invoice lines with 10000 unique suppliers.The supplier dimension is pre-populated with 10000 suppliers, and the refresh contains the exact same suppliers",10000,10000,00:00:15,00:00:40,"RA-Dev-Sql01"
+"A refresh of 100000 invoice lines with 100000 unique suppliers.The supplier dimension is pre-populated with 100000 suppliers, and the refresh contains the exact same suppliers",100000,100000,00:01:18,00:04:10,"RA-Dev-Sql01"
+"A refresh of 1000000 invoice lines with 1000000 unique suppliers.The supplier dimension is pre-populated with 1000000 suppliers, and the refresh contains the exact same suppliers",1000000,1000000,00:11:31,nan,"RA-Dev-Sql01"
+"A refresh of 10000000 invoice lines with 10000000 unique suppliers.The supplier dimension is pre-populated with 10000000 suppliers, and the refresh contains the exact same suppliers",10000000,10000000,03:35:04,nan,"RA-Dev-Sql01"

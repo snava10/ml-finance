@@ -53,7 +53,7 @@ def get_data(symbols, dates):
 		symbols.insert(0, 'SPY')
 
 	for symbol in symbols:
-		symbolDf = pd.read_csv("data/{}.csv".format(symbol),
+		symbolDf = pd.read_csv("data/{}.csv".format(symbol.lower()),
 			index_col="Date",
 			parse_dates=True,
 			usecols=['Date','Adj Close'],

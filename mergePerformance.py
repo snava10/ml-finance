@@ -44,14 +44,14 @@ def fit_poly(data, error_func, degree=3):
 
 if __name__=="__main__":
 	df = get_data()
-	poly1 = fit_poly(df.ix[:,['TimeChecksum']],error_poly)
-	print(df.ix[:,['TimeChecksum']])
-	#print(df)
-	#ax = df.plot(kind='line',title="Merging Suppliers",loglog=True,style='-o')
-	#ax.set_xlabel("Suppliers")
-	#ax.set_ylabel("Time in minutes")
-	#lines,labels = ax.get_legend_handles_labels()
-	#labels[0]="Improved"
-	#labels[1] = "Current"
-	#ax.legend(lines,labels)
-	#plt.show()
+	# poly1 = fit_poly(df.ix[:,['TimeChecksum']],error_poly)
+	# print(df.ix[:,['TimeChecksum']])
+	print(df)
+	ax = df.plot(kind='line',title="Merging Suppliers",loglog=True,style='-o')
+	ax.set_xlabel("Suppliers")
+	ax.set_ylabel("Time in minutes")
+	lines,labels = ax.get_legend_handles_labels()
+	labels[0]="Improved"
+	labels[1] = "Current"
+	ax.legend(lines,labels)
+	plt.show()

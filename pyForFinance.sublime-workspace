@@ -4,28 +4,12 @@
 		"selected_items":
 		[
 			[
-				"plot",
-				"plot_2_histograms"
-			],
-			[
-				"ran",
-				"rand"
-			],
-			[
-				"get_",
-				"get_rolling_std"
-			],
-			[
-				"rolli",
-				"get_rolling_std"
-			],
-			[
-				"plot_",
-				"plot_data"
-			],
-			[
 				"googl",
 				"googlDf"
+			],
+			[
+				"plot",
+				"plot_columns"
 			],
 			[
 				"Grand",
@@ -35,41 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/github/VEnvs/matplotlibTests/Source/generate_terrain.py",
-			"settings":
-			{
-				"buffer_size": 1016,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "histograms.py",
-			"settings":
-			{
-				"buffer_size": 1165,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "numpy_test.py",
-			"settings":
-			{
-				"buffer_size": 1691,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "data_reader.py",
-			"settings":
-			{
-				"buffer_size": 2820,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Virtualenv/Python + Virtualenv.sublime-build",
 	"build_system_choices":
@@ -102,12 +51,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 242.0,
-		"last_filter": "Virtual",
+		"height": 392.0,
+		"last_filter": "Vi",
 		"selected_items":
 		[
 			[
-				"Virtual",
+				"Vi",
 				"Virtualenv: Activate"
 			],
 			[
@@ -121,10 +70,6 @@
 			[
 				"",
 				"Build With: Python + Virtualenv"
-			],
-			[
-				"Vi",
-				"Virtualenv: New"
 			],
 			[
 				":Activate",
@@ -143,7 +88,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -167,23 +112,12 @@
 	],
 	"file_history":
 	[
-		"/C/github/VEnvs/matplotlibTests/Source/generate_terrain.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/histograms.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/missing_data.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/statistics.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/numpy_test.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data_reader.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/__init__.py",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/fake2.csv",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/fake1.csv",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/fb.csv",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/xrx.csv",
-		"/C/Users/sergio.nunez/Downloads/terrorism-in-america.json",
-		"/C/Users/sergio.nunez/Work Folders/Desktop/Inserting 100000 rows took 36 seconds",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/googl.csv",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/.gitignore",
-		"/C/github/VEnvs/pyForFinanceEnv/Source/data/yhoo.csv",
+		"/home/sergio/github/VEnvs/mlFinanceEnv/source/ml-finance/__init__.py",
+		"/home/sergio/github/VEnvs/mlFinanceEnv/source/ml-finance/data/yhoo.csv",
+		"/home/sergio/github/VEnvs/mlFinanceEnv/source/ml-finance/data-reader.py",
+		"/home/sergio/github/VEnvs/mlFinanceEnv/source/ml-finance/.gitignore",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data-reader.py",
+		"/C/github/VEnvs/pyForFinanceEnv/Source/data/googl.csv",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data/msft.csv",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data/aapl.csv",
 		"/C/github/VEnvs/pyForFinanceEnv/Source/data/ibm.csv",
@@ -232,7 +166,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -246,8 +180,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"1",
-			"    ",
 			"935.00",
 			"type",
 			"CSKT",
@@ -261,7 +193,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"\t",
 			""
 		],
 		"reverse": false,
@@ -273,125 +204,8 @@
 	"groups":
 	[
 		{
-
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/github/VEnvs/matplotlibTests/Source/generate_terrain.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1016,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								925,
-								925
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "histograms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								419,
-								419
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "numpy_test.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								85
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "data_reader.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 342.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -428,17 +242,17 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 351.0
+		"height": 188.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/Virtualenv/Python + Virtualenv.sublime-build",
 	"project": "pyForFinance.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

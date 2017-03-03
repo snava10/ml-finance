@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.random as rand
 from time import time
+import pandas as pd
 
 def test_run():
 	#print(np.array([(2,3,4),(5,6,7)]))
@@ -65,12 +66,17 @@ def aritmetic_operations():
 	print(a*b) #element wise multiplication
 	print(b//a) #element wise division
 	#for matrix multiplication use function dot
-
+	x = np.array([(1,2,3,4),(1,2,3,4)])
+	y = np.array([(1,2,3,4)])
+	print(x/y)
+	df = pd.DataFrame(x)
+	print(df/pd.DataFrame(y).ix[0,:])
 
 def get_max_index(a):
 	#return np.where(a==a.max())[0][0]
 	return a.argmax()
 
 if __name__ == "__main__":
-	test_run()
+	#test_run()
+	aritmetic_operations()
 

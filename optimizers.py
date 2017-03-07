@@ -109,6 +109,7 @@ def fit_poly_example():
 	noise_sigma = 5.0
 	noise = np.random.normal(0, noise_sigma, yorig.shape)
 	data = np.asarray([xorig,yorig + noise]).T
+	print("input data",data)
 	plt.plot(data[:,0],data[:,1],'go',label="Data points")
 	c_fit = fit_poly(data,error_poly)
 	print("Fitted polynomial: C={}".format(c_fit))

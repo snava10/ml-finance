@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-#import scipy.optimize as spo
+import scipy.optimize as spo
 
 
 def get_data():
@@ -10,7 +10,8 @@ def get_data():
 		usecols=["TimeChecksum","TimeWithoutChecksum","DimensionLines"])
 	df['TimeChecksum'] = df['TimeChecksum'].apply(time_spam_to_minutes)
 	df['TimeWithoutChecksum'] = df['TimeWithoutChecksum'].apply(time_spam_to_minutes)
-	return df.set_index(['DimensionLines'])
+	return df
+	#return df.set_index(['DimensionLines'])
 
 def time_spam_to_minutes(ts):
 	if isinstance(ts,str):
@@ -36,7 +37,7 @@ def fit_poly(data, error_func, degree=3):
 
 	#Plot initial guess
 	x = np.linspace(-5,5,21)
-	plt.plot(x,np.polyval(Cguess,x),'r--', linewidth=2.0, label="Initial Guess")
+	#plt.plot(x,np.polyval(Cguess,x),'r--', linewidth=2.0, label="Initial Guess")
 
 	#Call the optimizer
 	result = spo.minimize(error_func, Cguess, args=(data,), method='SLSQP',options={'disp':True})
@@ -44,14 +45,23 @@ def fit_poly(data, error_func, degree=3):
 
 if __name__=="__main__":
 	df = get_data()
-	# poly1 = fit_poly(df.ix[:,['TimeChecksum']],error_poly)
-	# print(df.ix[:,['TimeChecksum']])
 	print(df)
-	ax = df.plot(kind='line',title="Merging Suppliers",loglog=True,style='-o')
-	ax.set_xlabel("Suppliers")
-	ax.set_ylabel("Time in minutes")
-	lines,labels = ax.get_legend_handles_labels()
-	labels[0]="Improved"
-	labels[1] = "Current"
-	ax.legend(lines,labels)
+	df['DimensionLines'] = df['DimensionLines']/df['DimensionLines'].max()
+	vals1 = df.ix[:,['DimensionLines','TimeChecksum']].as_matrix()
+	poly1 = fit_poly(vals1,error_poly,degree=2)
+	print(poly1)
+	valsNotChecksum = df.ix[0:3,['DimensionLines','TimeWithoutChecksum']].as_matrix()
+	print(valsNotChecksum)
+	polyNoChecksum = fit_poly(valsNotChecksum,error_poly,degree=2)
+	print(polyNoChecksum)
+	plt.plot(vals1[:,0],vals1[:,1],'go',label="New")
+	plt.plot(valsNotChecksum[:,0],valsNotChecksum[:,1],'bo',label="Current")
+	p = np.array(range(0,100))
+	p = p/100
+	plt.plot(p,np.polyval(poly1,p),'m--', linewidth=2.0, label="New Estimation")
+	plt.plot(p,np.polyval(polyNoChecksum,p),'r--',linewidth=2.0, label="Current Estimation")
+	plt.legend(loc='upper left')
+	plt.xlabel('Suppliers x 10,000,000')
+	plt.ylabel('Time in minutes')
+	plt.title('Merging suppliers time')
 	plt.show()

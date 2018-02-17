@@ -17,8 +17,7 @@ class Portfolio:
 		self.startDate = startDate
 		self.endDate = endDate
 		self.allocation = allocation
-		#self.rawdf = self._loadData(startDate, endDate)
-		#self.__loadData()
+		
 	
 	def plot_daily_returns(self, symbols=None):
 		if not symbols:
@@ -26,6 +25,18 @@ class Portfolio:
 		df = Portfolio.get_data(symbols, self.startDate, self.endDate)
 		daily_returns = Portfolio.compute_daily_returns(df)
 		Portfolio.plot_data(daily_returns,title="Daily returns", xlabel="Dates", ylabel="Return")
+
+	def plot_daily_returns_allocated(self, amount, allocation):
+		symbols = self.symbols
+		df = Portfolio.get_data(self.symbols, self.startDate, self.endDate)
+		df = df/df.ix[0,:]
+		for i in range(len(symbols)): #allocating
+			df[symbols[i]] = df[symbols[i]]*allocation[i]
+		df = df.sum(axis=1)
+		dailyReturns = (df / df.shift(1)) - 1
+		dailyReturns = dailyReturns[1:]
+				
+		Portfolio.plot_data(dailyReturns)
 
 	def plot_raw(self):
 		df = Portfolio.get_data(self.symbols, self.startDate, self.endDate)
@@ -59,11 +70,15 @@ class Portfolio:
 		dr = (self.portVals / self.portVals.shift(1)) - 1
 		self.dailyReturns = dr[1:]
 
-	def get_basic_statistics(self, symbols=None):
+	def get_basic_statistics(self,allocation=None, symbols=None):
 		if not symbols:
 			symbols = self.symbols
+		if not allocation:
+			allocation = [1/len(symbols) for x in symbols]
 
 		df = Portfolio.get_data(symbols, self.startDate, self.endDate)
+		for i in range(len(symbols)): #allocating
+			df[symbols[i]] = df[symbols[i]]*allocation[i]
 		df = df.sum(axis=1)
 		#print(df)
 		netRet = df[0]-df[-1]
@@ -84,27 +99,33 @@ class Portfolio:
 		}
 		return res
 
-	def optimize_for_sharp_ratio(self):
-		start_allocation = self.allocation
-		def f(alloc,data):
-			df = data.copy()
-			for i in range(len(self.symbols)): #allocating
-				df[self.symbols[i]] = df[self.symbols[i]]*alloc[i]
-			portVals = df.sum(axis=1)
-			dr = (portVals / portVals.shift(1)) - 1
-			dr = dr[1:]
-			return -(math.sqrt(252) * dr.mean()/dr.std())
+	def optimize_for_sharp_ratio(self, amount, allocation):
+		symbols = self.symbols
+		start_allocation = allocation if allocation else [1/len(symbols) for x in symbols]
+		df = Portfolio.get_data(symbols, self.startDate, self.endDate)
+		df = df/df.ix[0,:] #normalizing
+		def f(alloc, data):
+			dfC = data.copy()
+			for i in range(len(symbols)): #allocating
+				dfC[symbols[i]] = dfC[symbols[i]]*alloc[i]
+			portVals = dfC.sum(axis=1)
+			dailyReturns = (portVals / portVals.shift(1)) - 1
+			dailyReturns = dailyReturns[1:]
+			return -(math.sqrt(252) * dailyReturns.mean()/dailyReturns.std()) #sharp ratio formula
 		bounds = [(0,1) for s in self.symbols]
 		constraint = {
 			'type' : 'eq',
 			'fun' : lambda x : sum(x) - 1
 		}
-		result = spo.minimize(f, start_allocation,args=(self.normalized_data,),bounds=bounds, 
+		result = spo.minimize(f, start_allocation,args=(df,),bounds=bounds, 
 			constraints=constraint,method='SLSQP',options={'disp':True})
 		return result.x
 
 	def plot_portfolio(self):
 		plot_data(self.dailyReturns,title="Daily returns")
+
+	def get_symbols(self):
+		return self.symbols
 
 	'''
 	Functions
@@ -161,9 +182,16 @@ if __name__=="__main__":
 	#print(portfolio.optimize_for_sharp_ratio())
 	#portfolio.plot_portfolio()
 
-	portfolio.plot_raw()
+	#portfolio.plot_raw()
 	portfolio.plot_daily_returns()
-	portfolio.plot_daily_returns(symbols=['GOOGL'])
-	portfolio.plot_portfolio_raw()
-	portfolio.plot_portfolio_daily_returns()
+	#portfolio.plot_daily_returns(symbols=['GOOGL'])
+	#portfolio.plot_portfolio_raw()
+	#portfolio.plot_portfolio_daily_returns()
 	print(portfolio.get_basic_statistics())
+	print(portfolio.get_basic_statistics(allocation=[0,0,0,1]))
+	print(portfolio.get_basic_statistics(allocation=[0.3,0,0.7,0]))
+
+	#portfolio.plot_daily_returns_allocated(1000, [0.25,0.25,0.25,0.25])
+	#portfolio.plot_daily_returns_allocated(1000, [0,0,0,1])
+	#print(portfolio.optimize_for_sharp_ratio(1000,None))
+	#print(portfolio.get_symbols())
